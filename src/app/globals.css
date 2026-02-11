@@ -1,3 +1,10 @@
+@import url("./styles/vendors/bootstrap.css");
+@import url("./styles/vendors/magnific-popup.css");
+@import url("./styles/vendors/splitting.css");
+@import url("./styles/vendors/swiper.css");
+@import url("./styles/vendors/animate.css");
+@import url("./styles/style.css");
+@import url("./styles/dark.css");
 @import "tailwindcss";
 
 @layer base {
@@ -7,61 +14,45 @@
     --color-dark: #1f1f1f;
     --color-light: #ffffff;
   }
-
-  body {
-    @apply bg-white dark:bg-[var(--color-dark)] text-gray-800 dark:text-gray-200;
-    font-family: "Jost", sans-serif;
-    transition:
-      background-color 0.3s,
-      color 0.3s;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold;
-  }
-
-  section {
-    @apply py-20 px-4;
-  }
 }
 
-@layer components {
-  .container-custom {
-    @apply max-w-7xl mx-auto px-4;
-  }
-
-  .btn-primary {
-    @apply bg-[var(--color-primary)] hover:opacity-90 text-white px-6 py-3 rounded-full transition-all duration-300 inline-block font-medium;
-  }
-
-  .text-primary {
-    @apply text-[var(--color-primary)];
-  }
-
-  .section-title {
-    @apply text-4xl md:text-5xl font-bold mb-12 text-center;
-  }
-
-  .card {
-    @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl;
-  }
+@theme {
+  --font-jost: var(--font-jost);
+  --font-caveat: var(--font-caveat);
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
+html,
+body {
+  @apply overflow-x-hidden;
 }
 
-::-webkit-scrollbar-track {
-  @apply bg-gray-200 dark:bg-gray-800;
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+.animation-delay-500 {
+  animation-delay: 500ms;
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
-  @apply rounded-full;
+.lui-bgtitle {
+  position: relative;
+  top: -50px;
+  left: -50%;
+  width: 200%;
+  font-size: 350px;
+  /* font-family: "Caveat"; */
+  color: rgba(0, 0, 0, 0.02);
+  font-weight: bold;
+  line-height: 1px;
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
 }

@@ -1,7 +1,7 @@
 import { Jost, Caveat, Roboto, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import link from "next/link";
-import ClientLayout from "@/components/ui/client-layout";
+import ClientLayout from "@/components/client-layout";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -33,8 +33,7 @@ const robotoSlab = Roboto_Slab({
 });
 
 export const metadata = {
-  title: "Luique - Personal Portfolio React NextJS Template",
-  authors: [{ name: "bslthemes" }],
+  title: "Ifeoluwa Oluwafemi - Personal Portfolio",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",

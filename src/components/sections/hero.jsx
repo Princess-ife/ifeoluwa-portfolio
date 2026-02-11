@@ -12,7 +12,7 @@ export default function HeroSection() {
       <div className="container">
         <div className="lui-started v-line v-line-left">
           <div className="section hero-started">
-            <div class="v-line-block">
+            <div className="v-line-block">
               <span></span>
             </div>
             <div

@@ -8,8 +8,8 @@ import {
   jarallaxAnimation,
   stickyNav,
 } from "@/utils";
-import Header from "./Header";
-import PreLoader from "./pre-loader";
+import Header from "./ui/header";
+import PreLoader from "./ui/pre-loader";
 
 export default function ClientLayout({ children }) {
   const [loader, setLoader] = useState(true);
@@ -61,7 +61,7 @@ export default function ClientLayout({ children }) {
         <div className="wrapper">{children}</div>
       </div>
 
-      {/* <div className="cursor" /> */}
+      <div className="cursor" />
     </>
   );
 }
